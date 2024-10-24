@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/yolov8_detect_ncnn"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        <Button
+                android:id="@+id/buttonSwitchCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/on_off_camera" />
+
+        <Spinner
+                android:id="@+id/spinnerModel"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:drawSelectorOnTop="true"
+                android:entries="@array/model_array" />
+    </LinearLayout>
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinnerCPUGPU"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:drawSelectorOnTop="true"-->
+    <!--        android:entries="@array/cpugpu_array" />-->
+
+    <SurfaceView
+            android:id="@+id/cameraview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+</LinearLayout>

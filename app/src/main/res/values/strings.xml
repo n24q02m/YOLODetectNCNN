@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ncnn-yolov8</string>
+    <string name="yolov8_detect_ncnn">YoloV8 Detect NCNN</string>
+    <string name="on_off_camera">On/Off Camera</string>
+    <string-array name="model_array">
+        <item>n</item>
+        <item>s</item>
+    </string-array>
+</resources>
